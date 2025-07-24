@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 type Node struct {
 	Val      int
@@ -6,7 +6,7 @@ type Node struct {
 	Previous *Node
 }
 
-func newNode(new_val int) *Node {
+func NewNode(new_val int) *Node {
 	return &Node{
 		new_val,
 		nil,

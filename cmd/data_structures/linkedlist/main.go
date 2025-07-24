@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go_tutorial/data_structures/linkedlist"
 	"log"
 )
 
@@ -9,50 +10,50 @@ func main() {
 	//Initializing the ll
 	fmt.Println()
 	log.Default().Println("\nInitializing the ll")
-	ll := newLinkedList()
-	ll.showList()
+	ll := linkedlist.NewLinkedList()
+	ll.ShowList()
 
 	//Inserting elements
 	fmt.Println()
 	log.Default().Println("Inserting Elements")
-	ll.Insert(newNode(0))
-	ll.Insert(newNode(10))
-	ll.Insert(newNode(10))
-	ll.Insert(newNode(20))
-	ll.Insert(newNode(10))
-	ll.Insert(newNode(30))
-	ll.Insert(newNode(10))
-	ll.Insert(newNode(40))
-	ll.Insert(newNode(10))
-	ll.showList()
+	ll.Insert(linkedlist.NewNode(0))
+	ll.Insert(linkedlist.NewNode(10))
+	ll.Insert(linkedlist.NewNode(10))
+	ll.Insert(linkedlist.NewNode(20))
+	ll.Insert(linkedlist.NewNode(10))
+	ll.Insert(linkedlist.NewNode(30))
+	ll.Insert(linkedlist.NewNode(10))
+	ll.Insert(linkedlist.NewNode(40))
+	ll.Insert(linkedlist.NewNode(10))
+	ll.ShowList()
 
 	//Removing the last element
 	fmt.Println()
 	log.Default().Println("Removing the last element")
 	ll.RemoveLast()
-	ll.showList()
+	ll.ShowList()
 
 	//Removing the first element
 	fmt.Println()
 	log.Default().Println("Removing the first element")
 	ll.RemoveFirst()
-	ll.showList()
+	ll.ShowList()
 
 	//Removing the n-element
 	fmt.Println()
 	log.Default().Println("Removing the 2nd element")
 	ll.Remove(1)
-	ll.showList()
+	ll.ShowList()
 
 	//Removing all ocurrences of '10'
 	fmt.Println()
 	log.Default().Println("Removing all ocurrences of '10'")
 	ll.RemoveAllOCurrencesOf(10)
-	ll.showList()
+	ll.ShowList()
 
 	//Reversing
 	fmt.Println()
 	log.Default().Println("Reversing linked list")
 	ll.Reverse()
-	ll.showList()
+	ll.ShowList()
 }

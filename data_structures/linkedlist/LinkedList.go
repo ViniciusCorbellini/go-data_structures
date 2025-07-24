@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -7,10 +7,10 @@ import (
 type LinkedList struct {
 	Start_ptr *Node
 	End       *Node
-	Lenght     int
+	Lenght    int
 }
 
-func newLinkedList() *LinkedList {
+func NewLinkedList() *LinkedList {
 	return &LinkedList{
 		Start_ptr: &Node{},
 		Lenght:    0,
@@ -137,7 +137,7 @@ func (ll *LinkedList) IsEmpty() bool {
 	return ll.Lenght == 0
 }
 
-func (ll *LinkedList) showList() {
+func (ll *LinkedList) ShowList() {
 	fmt.Printf("START -> ")
 	for curr := ll.Start_ptr.Next; curr != nil; curr = curr.Next {
 		fmt.Printf("%v -> ", curr.Val)

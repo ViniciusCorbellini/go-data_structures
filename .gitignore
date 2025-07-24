@@ -1,0 +1,28 @@
+# =====================
+# Arquivos do VS Code
+# =====================
+.vscode/
+.history/
+*.code-workspace
+
+# =====================
+# Binários Go
+# =====================
+*.exe
+*.out
+*.test
+
+# =====================
+# Cache do Go
+# =====================
+/bin/
+/pkg/
+
+# =====================
+# Arquivos temporários
+# =====================
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

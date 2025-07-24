@@ -53,6 +53,18 @@ func (ll *LinkedList) Remove(index int) {
 	ll.Lenght--
 }
 
+func (ll *LinkedList) Get(index int) *Node{
+	if ll.IsEmpty() || index < 0 || index >= ll.Lenght {
+		return nil
+	}
+
+	curr := ll.Start_ptr
+	for i := -1; i < index; i++ {
+		curr = curr.Next
+	}
+	return curr
+}
+
 func (ll *LinkedList) RemoveFirst() {
 	if ll.IsEmpty() {
 		return

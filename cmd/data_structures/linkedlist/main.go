@@ -56,4 +56,12 @@ func main() {
 	log.Default().Println("Reversing linked list")
 	ll.Reverse()
 	ll.ShowList()
+
+	//Getting index 0
+	fmt.Println()
+	log.Default().Println("Getting first element")
+	n := ll.Get(0)
+	if n != nil {
+		fmt.Println(n.Val)
+	}
 }
